@@ -12,7 +12,7 @@
     />
 
     <style>
-      /* ===== ROOT ===== */
+     
       :root {
         --bg: #0b1220;
         --panel: #111b2e;
@@ -27,7 +27,7 @@
         --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
-      /* ===== RESET ===== */
+     
       * {
         box-sizing: border-box;
         margin: 0;
@@ -66,7 +66,7 @@
         text-decoration: none;
       }
 
-      /* ===== BACKGROUND GRID ===== */
+     
       body::before {
         content: "";
         position: fixed;
@@ -90,14 +90,14 @@
         pointer-events: none;
       }
 
-      /* ===== WRAP ===== */
+      
       .wrap {
         max-width: 920px;
         margin: 0 auto;
         padding: 0 28px;
       }
 
-      /* ===== NAV ===== */
+    
       nav {
         position: sticky;
         top: 0;
@@ -130,7 +130,6 @@
         color: var(--teal);
       }
 
-      /* ---- nav links (desktop) ---- */
       .nav-links {
         display: flex;
         gap: 28px;
@@ -171,7 +170,7 @@
         width: 100%;
       }
 
-      /* ---- hamburger ---- */
+     
       .hamburger {
         display: none;
         flex-direction: column;
@@ -212,7 +211,7 @@
         transform: translateY(-7px) rotate(-45deg);
       }
 
-      /* ---- mobile nav overlay ---- */
+     
       @media (max-width: 720px) {
         .hamburger {
           display: flex;
@@ -255,10 +254,9 @@
           bottom: 0;
         }
 
-        /* hide some nav items on mobile? we show all now */
+      
       }
 
-      /* ===== HERO ===== */
       .hero {
         padding: 72px 0 48px;
       }
@@ -295,7 +293,7 @@
         margin-bottom: 32px;
       }
 
-      /* ===== PIPELINE ===== */
+      
       .pipeline {
         display: flex;
         align-items: center;
@@ -386,7 +384,7 @@
         }
       }
 
-      /* ===== CTA ROW ===== */
+      
       .cta-row {
         display: flex;
         gap: 14px;
@@ -451,7 +449,7 @@
         }
       }
 
-      /* ===== SECTIONS ===== */
+  
       section {
         padding: 56px 0;
         position: relative;
@@ -484,7 +482,6 @@
         letter-spacing: -0.02em;
       }
 
-      /* ===== PANELS ===== */
       .panel {
         background: var(--panel);
         border: 1px solid var(--hair);
@@ -596,7 +593,7 @@
         color: var(--text);
       }
 
-      /* ===== PROJECTS ===== */
+     
       .project-actions {
         display: flex;
         gap: 12px;
@@ -627,7 +624,6 @@
         transform: translateY(-1px);
       }
 
-      /* ===== SKILLS ===== */
       .skills-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -654,7 +650,7 @@
         margin-top: 0;
       }
 
-      /* ===== ABOUT ===== */
+    
       .about-text {
         color: var(--muted);
         max-width: 640px;
@@ -666,7 +662,7 @@
         line-height: 1.7;
       }
 
-      /* ===== CONTACT ===== */
+    
       .contact-panel p {
         margin-bottom: 0;
       }
@@ -704,7 +700,7 @@
         border-color: var(--amber);
       }
 
-      /* ===== FOOTER ===== */
+     
       footer {
         padding: 34px 0 50px;
         text-align: center;
@@ -717,7 +713,7 @@
         letter-spacing: 0.04em;
       }
 
-      /* ===== FADE UP ===== */
+      
       .fade-up {
         opacity: 0;
         transform: translateY(20px);
@@ -745,11 +741,7 @@
         }
       }
 
-      /* ============================================================== */
-      /* ===== RESPONSIVE BREAKPOINTS ================================== */
-      /* ============================================================== */
-
-      /* ---- tablets & small laptops ---- */
+ 
       @media (max-width: 820px) {
         .wrap {
           padding: 0 24px;
@@ -772,7 +764,7 @@
         }
       }
 
-      /* ---- phones (large) ---- */
+
       @media (max-width: 620px) {
         .wrap {
           padding: 0 18px;
@@ -889,7 +881,7 @@
         }
       }
 
-      /* ---- small phones ---- */
+     
       @media (max-width: 400px) {
         .wrap {
           padding: 0 14px;
@@ -944,7 +936,6 @@
         }
       }
 
-      /* ---- landscape phones ---- */
       @media (max-height: 500px) and (orientation: landscape) {
         .hero {
           padding: 28px 0 20px;
@@ -972,7 +963,7 @@
         }
       }
 
-      /* ---- print ---- */
+      
       @media print {
         nav {
           position: static;
@@ -1015,7 +1006,7 @@
   </head>
 
   <body>
-    <!-- ===== NAV ===== -->
+    
     <nav>
       <div class="wrap">
         <a href="#top" class="nav-brand">elias.assaf<span>.dev</span></a>
@@ -1044,7 +1035,7 @@
       </div>
     </nav>
 
-    <!-- ===== HERO ===== -->
+   
     <header class="hero" id="top">
       <div class="wrap">
         <span class="eyebrow">Beirut, Lebanon · CS Graduate, LIU</span>
@@ -1092,7 +1083,7 @@
       </div>
     </header>
 
-    <!-- ===== ABOUT ===== -->
+   
     <section id="about">
       <div class="wrap fade-up">
         <div class="stage-label">
@@ -1124,7 +1115,6 @@
       </div>
     </section>
 
-    <!-- ===== EXPERIENCE ===== -->
     <section id="experience">
       <div class="wrap fade-up">
         <div class="stage-label">
@@ -1232,7 +1222,7 @@
       </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
+    
     <section id="projects">
       <div class="wrap fade-up">
         <div class="stage-label">
@@ -1240,7 +1230,7 @@
           <h2>Projects</h2>
         </div>
 
-        <!-- Crypto Pipeline -->
+        
         <div class="panel">
           <div class="panel-head">
             <h3>Real-Time Crypto Price Streaming Pipeline</h3>
@@ -1305,7 +1295,7 @@
           </div>
         </div>
 
-        <!-- SmartStay -->
+        
         <div class="panel">
           <div class="panel-head">
             <h3>SmartStay — Property Rental Platform</h3>
@@ -1339,7 +1329,61 @@
           </div>
         </div>
 
-        <!-- ML -->
+        
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Analytics Copilot — CSV-to-SQL Assistant</h3>
+            <span class="when mono">Data &amp; AI</span>
+          </div>
+          <p>
+            A Streamlit app where you upload a CSV, explore it with SQL, and ask
+            questions in plain English. An OpenAI model translates each question
+            into a DuckDB query that is validated before it runs.
+          </p>
+          <ul>
+            <li>
+              Loads uploaded CSVs (or a bundled sample sales dataset) into an
+              in-memory DuckDB table, with a data overview showing the schema,
+              row count, and a preview.
+            </li>
+            <li>
+              Built a natural-language mode that sends only the table schema and
+              a few sample rows to the model, then displays the generated SQL
+              alongside its results.
+            </li>
+            <li>
+              Added a validation layer that allows a single read-only SELECT or
+              CTE statement, blocks write and admin operations and SQL comments,
+              and caps displayed results at 500 rows.
+            </li>
+            <li>
+              Included a manual SQL editor that runs through the same validation
+              path, and wrote pytest tests covering allowed and rejected
+              queries.
+            </li>
+          </ul>
+          <div class="tags">
+            <span class="tag-chip">Python</span>
+            <span class="tag-chip">Streamlit</span>
+            <span class="tag-chip">DuckDB</span>
+            <span class="tag-chip">Pandas</span>
+            <span class="tag-chip">SQL</span>
+            <span class="tag-chip">OpenAI API</span>
+            <span class="tag-chip">pytest</span>
+          </div>
+          <div class="project-actions">
+            <a
+              href="https://github.com/3asseff/analytics-copilot"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View on GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        
         <div class="panel">
           <div class="panel-head">
             <h3>Machine Learning Research Report</h3>
@@ -1357,7 +1401,7 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    
     <section id="skills">
       <div class="wrap fade-up">
         <div class="stage-label">
@@ -1436,7 +1480,7 @@
       </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
+  
     <section id="contact">
       <div class="wrap fade-up">
         <div class="stage-label">
@@ -1483,17 +1527,15 @@
       </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
     <footer>
       <p>Built by Elias Assaf · Beirut, Lebanon</p>
     </footer>
 
-    <!-- ===== SCRIPTS ===== -->
+   
     <script>
       (function () {
         "use strict";
 
-        // ---- fade-up observer ----
         const items = document.querySelectorAll(".fade-up");
         const io = new IntersectionObserver(
           function (entries) {
@@ -1512,7 +1554,7 @@
           io.observe(items[j]);
         }
 
-        // ---- hamburger menu ----
+        
         var hamburger = document.getElementById("hamburger");
         var navLinks = document.getElementById("navLinks");
         var navAnchors = navLinks.querySelectorAll("a[data-nav]");
@@ -1534,7 +1576,6 @@
             toggleMenu();
           });
 
-          // close on anchor click
           for (var k = 0; k < navAnchors.length; k++) {
             navAnchors[k].addEventListener("click", function () {
               if (navLinks.classList.contains("open")) {
@@ -1543,7 +1584,7 @@
             });
           }
 
-          // close on outside click
+          
           document.addEventListener("click", function (e) {
             if (navLinks.classList.contains("open")) {
               var target = e.target;
@@ -1557,7 +1598,7 @@
             }
           });
 
-          // close on escape
+         
           document.addEventListener("keydown", function (e) {
             if (e.key === "Escape" && navLinks.classList.contains("open")) {
               toggleMenu(false);
@@ -1565,7 +1606,7 @@
             }
           });
 
-          // handle resize: close if open and going to desktop
+          
           var resizeTimer;
           window.addEventListener("resize", function () {
             clearTimeout(resizeTimer);
@@ -1580,7 +1621,6 @@
           });
         }
 
-        // ---- smooth anchor scroll (progressive enhancement) ----
         var allAnchors = document.querySelectorAll('a[href^="#"]');
         for (var a = 0; a < allAnchors.length; a++) {
           var link = allAnchors[a];

@@ -1271,6 +1271,64 @@
 
         <div class="panel">
           <div class="panel-head">
+            <h3>dbt + DuckDB Analytics Project</h3>
+            <span class="when mono">Data Engineering</span>
+          </div>
+          <p>
+            An ELT project that turns raw customer and order data into an
+            analytics-ready customer dimension with dbt Core on DuckDB,
+            organized into staging and mart layers with automated data tests and
+            generated documentation.
+          </p>
+          <ul>
+            <li>
+              Generated synthetic raw customer and order tables in DuckDB with a
+              Python script for repeatable local runs.
+            </li>
+            <li>
+              Built staging views over declared sources and a
+              <span class="mono">dim_customers</span> mart table with
+              completed-order count, lifetime value, and first order date per
+              customer.
+            </li>
+            <li>
+              Made <span class="mono">stg_orders</span> an incremental model
+              that merges on <span class="mono">order_id</span>, and verified
+              that new rows are picked up without duplicates.
+            </li>
+            <li>
+              Added eight data tests covering uniqueness, not-null,
+              relationships, and accepted values, and generated the dbt docs
+              site with its lineage graph.
+            </li>
+            <li>
+              Developed through feature branches and merged pull requests on
+              GitHub.
+            </li>
+          </ul>
+          <div class="tags">
+            <span class="tag-chip">dbt</span>
+            <span class="tag-chip">DuckDB</span>
+            <span class="tag-chip">SQL</span>
+            <span class="tag-chip">Python</span>
+            <span class="tag-chip">Data Modeling</span>
+            <span class="tag-chip">Incremental Models</span>
+            <span class="tag-chip">GitHub</span>
+          </div>
+          <div class="project-actions">
+            <a
+              href="https://github.com/3asseff/dbt-duckdb-analytics"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View on GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
             <h3>SmartStay — Property Rental Platform</h3>
             <span class="when mono">Final-Year Project</span>
           </div>
